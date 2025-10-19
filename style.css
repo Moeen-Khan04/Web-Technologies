@@ -11,9 +11,29 @@ p {
   color: darkblue;
   font-size: 14px;
 }
-#main-title { color: navy; text-decoration: underline; }
-.highlight { background-color: yellow; font-style: italic; }
-ul li:first-child { font-weight: bold; }
-a:hover { color: red; }
-p::first-letter { font-size: 24px; color: green; }
-img { border: 2px solid black; width: 200px; }
+
+#main-title { 
+  color: navy;
+  text-decoration: underline; 
+}
+
+.highlight { 
+  background-color: yellow;
+  font-style: italic; 
+}
+
+ul li:first-child {
+  font-weight: bold;
+}
+
+a:hover { 
+  color: red; 
+}
+
+p::first-letter {
+  font-size: 24px; color: green; 
+}
+
+img { 
+  border: 2px solid black; width: 200px; 
+}
