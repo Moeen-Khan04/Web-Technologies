@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>JavaScript Fundamentals & Console Programming</h1>
+    <p>following are tasks</p>
+    <h2>Task 1: Click on the following button</h2>
+    <button onclick="user()">Task 1: Show name and Registration ID</button>
+    <h2>Task 2: Enter the following numbers and then click the button</h2>
+    <p>Enter 1st number<input class="num1" type="text"></p>
+    <p>Enter 2nd number<input class="num2" type="text"></p>
+    <br>
+    <button onclick="maths()">Task 2: Arithmetics and Comparison Operators</button>
+    <p id="output"></p>
+    
+    <script>
+       function user() {
+        var name = prompt("Enter the name: ");
+        var reg = prompt("Enter the Regiustration ID: ");
+
+        alert("Your name is: " + name + " and your registration id is: " + reg);
+       }
+       function maths(x,y) {
+        const a = Number(document.querySelector(".num1").value);
+        const b = Number(document.querySelector(".num2").value);
+        
+       const sum = a+b;
+       const diff = a-b;
+       const prod = a*b;
+       const div = a/b;
+       const comp = a>b;
+
+       document.getElementById("output").innerHTML = `
+       Sum: ${sum}<br>
+       Difference: ${diff}<br>
+       Product: ${prod}<br>
+       Division: ${div}<br>
+       Comparison: ${comp} 
+       `
+       }
+
+    </script>
+</body>
+</html>
