@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Technologies Lab – Combined Tasks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Combined Lab Tasks</h2>
+
+  <!-- Task 1: Interactive Elements -->
+  <div class="panel">
+    <button class="item circle" onclick="changeColor(this)">Click Me</button>
+    <button class="item square" onmouseover="resize(this)" onmouseout="resetSize(this)">Hover Me</button>
+    <button class="item text" onclick="toggleText(this)">Toggle Text</button>
+  </div>
+
+  <!-- Task 2: Control Panel with Modular Logic -->
+  <button onclick="runAction('color')">Change Background</button>
+  <button onclick="runAction('sound')">Play Sound</button>
+  <button onclick="runAction('data')">Show Time</button>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
